@@ -14,12 +14,12 @@ class SnowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        makeSnow.layer.cornerRadius = makeSnow.frame.height / 5
         makeSnow.setTitle("Make it stop", for: .normal)
         makeSnow.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         makeSnow.setTitleColor(#colorLiteral(red: 0.002352767758, green: 0.5326642951, blue: 1, alpha: 1), for: .normal)
         makeSnow.translatesAutoresizingMaskIntoConstraints = false
         makeSnow.addTarget(self, action: #selector(makeItSnow(_:)), for: .touchUpInside)
+        makeSnow.layer.cornerRadius = makeSnow.frame.height / 3
         
         let sky = SkyView()
         sky.startColor = #colorLiteral(red: 0.002352767758, green: 0.5326642951, blue: 1, alpha: 1)

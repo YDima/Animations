@@ -20,17 +20,26 @@ class PartyViewController: UIViewController {
         background.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(background)
         
-//        var happy = UILabel()
-//        happy.text = "Happy Birthday"
-//        view.addSubview(happy)
-//        var cake = #imageLiteral(resourceName: "birthday-cake").cgImage
-//        view.addSubview(cake)
+        let happy = UILabel()
+        happy.text = "Happy Birthday"
+        happy.textColor = #colorLiteral(red: 0.9959564805, green: 0.7601529956, blue: 0.8575319648, alpha: 1)
+        happy.font = UIFont(name: "Arial Rounded MT Bold", size: 38)
+        happy.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(happy)
+        
+        let cake = UIImageView(image: #imageLiteral(resourceName: "birthday-cake"))
+        cake.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(cake)
         
         confetti.confettiImage = #imageLiteral(resourceName: "confetti")
         confetti.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(confetti)
         
         NSLayoutConstraint.activate([
+            happy.topAnchor.constraint(equalTo: view.topAnchor, constant: 133),
+            happy.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            cake.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            cake.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             background.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             background.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             background.topAnchor.constraint(equalTo: view.topAnchor),

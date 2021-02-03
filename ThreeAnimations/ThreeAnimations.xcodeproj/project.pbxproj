@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640E013125CA27CB001276CE /* SnowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E013025CA27CB001276CE /* SnowViewController.swift */; };
+		640E013525CA8070001276CE /* SkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E013425CA8070001276CE /* SkyView.swift */; };
+		640E013825CA8137001276CE /* SnowFlakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E013725CA8137001276CE /* SnowFlakeView.swift */; };
 		64F69FDA25C95B9800CD40AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F69FD925C95B9800CD40AB /* AppDelegate.swift */; };
 		64F69FDC25C95B9800CD40AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F69FDB25C95B9800CD40AB /* SceneDelegate.swift */; };
 		64F69FDE25C95B9800CD40AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F69FDD25C95B9800CD40AB /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		640E013025CA27CB001276CE /* SnowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowViewController.swift; sourceTree = "<group>"; };
+		640E013425CA8070001276CE /* SkyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyView.swift; sourceTree = "<group>"; };
+		640E013725CA8137001276CE /* SnowFlakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowFlakeView.swift; sourceTree = "<group>"; };
 		64F69FD625C95B9800CD40AB /* ThreeAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F69FD925C95B9800CD40AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64F69FDB25C95B9800CD40AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		640E013325CA8048001276CE /* Snow */ = {
+			isa = PBXGroup;
+			children = (
+				640E013025CA27CB001276CE /* SnowViewController.swift */,
+				640E013425CA8070001276CE /* SkyView.swift */,
+				640E013725CA8137001276CE /* SnowFlakeView.swift */,
+			);
+			path = Snow;
+			sourceTree = "<group>";
+		};
 		64F69FCD25C95B9800CD40AB = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +72,7 @@
 		64F69FD825C95B9800CD40AB /* ThreeAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				640E013325CA8048001276CE /* Snow */,
 				64F69FD925C95B9800CD40AB /* AppDelegate.swift */,
 				64F69FDB25C95B9800CD40AB /* SceneDelegate.swift */,
 				64F69FDD25C95B9800CD40AB /* ViewController.swift */,
@@ -137,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				640E013525CA8070001276CE /* SkyView.swift in Sources */,
+				640E013825CA8137001276CE /* SnowFlakeView.swift in Sources */,
 				64F69FDE25C95B9800CD40AB /* ViewController.swift in Sources */,
+				640E013125CA27CB001276CE /* SnowViewController.swift in Sources */,
 				64F69FDA25C95B9800CD40AB /* AppDelegate.swift in Sources */,
 				64F69FDC25C95B9800CD40AB /* SceneDelegate.swift in Sources */,
 			);
